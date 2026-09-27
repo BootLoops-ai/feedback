@@ -1,0 +1,10 @@
+name: Suggestion
+description: A tool, check, comparison, integral, model or result you would like to see.
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggestion
+    validations:
+      required: true

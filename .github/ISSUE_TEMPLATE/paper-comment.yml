@@ -1,0 +1,23 @@
+name: Comment or correction on a paper or web page
+description: Something in a manuscript or web summary looks wrong, unclear or unsupported.
+labels: ["paper-comment"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Paper or page
+      description: PDF file name or title (e.g. exactphylogenetics.pdf) or the page URL
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Page / section / equation / figure number, or the quoted sentence
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment
+      description: What you think is wrong or unclear, and why. References welcome.
+    validations:
+      required: true
