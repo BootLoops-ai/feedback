@@ -1,0 +1,41 @@
+name: Tool request (build, port or link a tool)
+description: Ask BootLoops to build a new tool, port an existing package, or call or list a tool you maintain.
+labels: ["tool-request"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of request
+      options:
+        - Build a new tool
+        - Port an existing tool
+        - Link my tool
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or description
+      description: "Build: the calculation that needs an instrument BootLoops does not have. Port: the package, its license, and which part you need. Link: the software you maintain and what it does, in a paragraph."
+    validations:
+      required: true
+  - type: textarea
+    id: io
+    attributes:
+      label: Inputs and outputs
+      description: The input you have and the output you need (formats, sizes, precision)
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference value or test
+      description: A known value, a published number, or a test we can run to check the result
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Repository, paper, documentation or data
+  - type: input
+    id: contact
+    attributes:
+      label: Contact
+      description: How to reach you if it is not your GitHub account (optional)

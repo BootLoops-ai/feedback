@@ -1,0 +1,45 @@
+name: Application
+description: You used BootLoops (or a method from one of its papers) on your own problem, or you have a problem you think fits.
+labels: ["application"]
+body:
+  - type: input
+    id: field
+    attributes:
+      label: Field or discipline
+      description: e.g. population genetics, collider physics, health policy
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+      description: What you want to know, in a few sentences
+    validations:
+      required: true
+  - type: textarea
+    id: computed
+    attributes:
+      label: What was computed, or what should be
+      description: The quantity, the method or tool used (or wanted), and any result you already have
+    validations:
+      required: true
+  - type: dropdown
+    id: data
+    attributes:
+      label: Data availability
+      options:
+        - Public
+        - On request
+        - Private
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Repository, paper, preprint or dataset
+  - type: input
+    id: credit
+    attributes:
+      label: Credit line
+      description: How you would like to be credited if the application gets a web summary on bootloops.ai (name, affiliation)
