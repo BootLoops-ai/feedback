@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Write privately instead
     url: https://bootloops.ai/contact.html
-    about: Email addresses for science questions, bugs, tools and the author.
+    about: Science and general questions, comments on the papers and applications go to the author by email; tools and code stay on GitHub.
